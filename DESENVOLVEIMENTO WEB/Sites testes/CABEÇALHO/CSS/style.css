@@ -3,7 +3,7 @@ body {
 }
 
 .LinhaMae {
-    width: 28%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -26,11 +26,11 @@ body {
 .EstiloCelula3::before,
 .EstiloCelula4::before {
     content: "";
-    width: 1px;
+    width: 3px;
     height: 50px;
     background: white;
     position: absolute;
-
+    margin: 0 -10px;
 }
 
 .cabecalho {
