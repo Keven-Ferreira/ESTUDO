@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecario {
+    text-align: center;
+    background-color: rgba(35, 136, 224, 0.719);
+}
+
+.cabecario>a {
+    display: inline-block;
+    margin: 1% 1%;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 4px;
+    background: rgb(255, 255, 255);
+}
+
+.cabecario>p>a>img {
+    display: inline;
+    width: 22px;
+    margin-top: 1px;
+    max-height: 23px;
+}
+
+.cabecario>p {
+    display: inline-block;
+    text-align: right;
+    width: 250px;
+    background-color: rgb(204, 111, 111);
+}
