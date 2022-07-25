@@ -1,17 +1,22 @@
-.artigo{
+html,
+body {
+    height: 100%;
+}
+
+.artigo {
     width: 80%;
     background-color: rgb(200, 200, 200);
     text-align: center;
 }
 
-.artigo h1{
+.artigo h1 {
     color: rgb(66, 149, 244);
     font-size: 23px;
     font-style: normal;
     font-weight: normal;
 }
 
-.artigo p{
+.artigo p {
     color: #b4b4b4;
     text-align: left;
     font-size: 17px;
