@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.margin{
+    border: 1px dotted black;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 0 25px 25px 25px;
+}
+
+.border{
+    border: 1px solid black;
+    padding: 0 25px 25px 25px;
+    background-color: rgb(169, 209, 142);
+}
+
+.padding{
+    border: 1px solid black;
+    padding: 0 25px 25px 25px;
+    background-color: white;
+}
+
+.content{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.content>h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+h1{
+    font-weight: normal;
+}
