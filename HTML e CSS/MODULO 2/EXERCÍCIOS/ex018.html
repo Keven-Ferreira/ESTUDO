@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @font-face {
+            font-family: 'littlle bird';
+            src: url(littlebird.ttf) format(truetype);
+        }
+        body{
+          font-family: serif;
+          font-size: 1.3em; 
+          font-weight: normal;
+        }
+        #padrao{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        #google{
+            font-family: pacifico, cursive;
+            font-weight: normal;
+        }
+        #local{
+            font-family: 'littlle bird';
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes em CSS</h1>
+    <h2 id="padrao">Podemos configurar fontes padão do sistema</h2>
+    <h2 id="google">Ou então usar uma fonte do Google Fonts</h2>
+    <h2 id="local">Ou anda usar um arquivo loca de fontes</h2>
+</body>
+</html>

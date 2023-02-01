@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        :root{
+            --cor1: rgb(228, 121, 17);
+            --cor2: rgba(228, 123, 17, 0.486);
+            --cor3: rgba(116, 80, 44, 0.233);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(228, 121, 17);
+        }
+        main{
+            min-width: 500px;
+            max-width: 800px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 1px black;
+            padding: 12px;
+        }
+        h1{
+            margin: 0px 0px 10px 0px;
+            text-align: center;
+            background-color: var(--cor2);
+            border-radius: 20px;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.341);
+        }
+        p{
+            margin: 4px 0px;
+            text-indent: 30px;
+            text-align: justify;
+        }
+        main .primeiro{
+            margin: 15px 0px 25px 0px;
+        }
+        span{
+            color: var(--cor1);
+            text-shadow: 0px 0px 1px black;
+        }
+        main .destaque{
+            background-color: var(--cor3);
+        }
+        footer > p{
+            text-align: center;
+            
+            
+        }
+        footer{
+            background-color: white;
+            height: 1.5em;
+            padding: 3px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Classes em CSS</h1>
+            <p class="primeiro">Para evitar o stress do último exercício, onde tive que ficar inventando textos, vou pegar aqui um texto que foi copiado de um site de notícias &#x1f605</p>
+            <h2><span>Amazon</span> lança sua própria distribuição Linux</h2>
+            <p> A gigante de comércio <span>Amazon</span> surpreende mais uma vez e lança uma distribuição Linux própria. O novo sistema operacional de código aberto é chamado Bottlerocket. Porém, muita calma nessa hora. Antes de se empolgar com a distro e tentar fazer a instalação você precisa saber que ela não funciona da mesma forma que outras &lsquo;normais&rsquo; como Ubuntu, Debian ou Fedora.</p>
+
+            <h3>Conheça a Bottlerocket: distribuição Linux da <span>Amazon</span> para execução de contêineres</h3>
+            <p>Muita coisa mudou no setor de TI desde que o termo computação em nuvem foi cunhado pela primeira vez. Demora alguns segundos para implantar um servidor Linux (geralmente executando em uma VM), graças a provedores de servidores em nuvem como <span>Amazon</span> AWS, Google, Linode, Digital Ocean etc. Além disso, você pode implantar aplicativos e serviços nesses servidores na forma de recipientes graças a ferramentas como Docker e Kubernetes.</p>
+
+            <p>O problema é que, quando seu único objetivo é executar contêineres em um sistema Linux, nem sempre é necessária uma distribuição Linux completa. É por isso que existem sistemas específicos para contêineres que fornecem apenas os pacotes necessários. Isso reduz drasticamente o tamanho do sistema operacional e o tempo de implantação. O Bottlerocket Linux é desenvolvido especificamente pela <span>Amazon</span> Web Services para executar contêineres em máquinas virtuais ou hosts bare metal. Ele suporta docker images além de outras que seguem o formato de imagem OCI.</p>
+
+            <h3>Recursos do Bottlerocket Linux</h3>
+            <p class="destaque">Nenhuma atualização pacote por pacote. O procedimento tradicional de uma distribuição Linux é composto pela atualização de pacotes individuais. Bottlerocket usa atualizações baseadas em imagem. Graças a essa abordagem, conflitos e quebras são evitados com a possibilidade de uma reversão rápida e completa (se necessário). Sistema de arquivos somente leitura. O Bottlerocket também usa um sistema de arquivos somente leitura. Sua integridade é verificada no momento da inicialização via dm-verity. Para medidas de segurança adicionais, o acesso SSH também é desencorajado e só está disponível através do contêiner de administrador (mecanismo adicional).</p>
+
+            <h3>Atualizações automatizadas</h3>
+            <p class="marca destaque">Você pode automatizar as atualizações do Bottlerocket usando um serviço de orquestração como o <span>Amazon</span> EKS. A <span>Amazon</span> também afirma que incluir apenas o software essencial para executar contêineres reduz o número de ataques em comparação com as distribuições Linux de uso geral.</p>
+
+            <h3>O que você acha?</h3>
+            <p>A <span>Amazon</span> não é a primeira a criar um &lsquo;Linux específico para contêineres&rsquo;. O CoreOS foi uma das primeiras distribuições desse tipo. O CoreOS foi adquirido pela Red Hat, que foi vendida para a IBM. A Red Hat recentemente interrompeu o CoreOS e o substituiu pelo Fedora CoreOS. O servidor em nuvem é uma grande indústria que continuará a crescer. Um gigante como a <span>Amazon</span> fará de tudo para ficar à par ou à frente de seus concorrentes. Na minha opinião, Bottlerocket é uma resposta para (agora) o Fedora CoreOS da IBM. Embora os repositórios Bottlerocket estejam disponíveis no GitHub , ainda não é possível achar um pronto para criar imagens. No momento, ele está disponível apenas como uma prévia na AWS.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por Gustavo Guanabara para o CursoemVideo.</p>
+    </footer>
+</body>
+</html>

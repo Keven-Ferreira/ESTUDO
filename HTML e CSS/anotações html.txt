@@ -1,0 +1,174 @@
+Tags básicas para criação de documento
+___________________________________________________
+<!DOCTYPE html> -> Indicação de documento html.
+<html> -> Início do documento html
+</html> -> Final do documento html
+<head> -> Início do cabecário 
+</head> -> Fim do cabeçário
+<body> -> Incício do corpo do documento.
+</body> -> Fim do corpo do documento.
+----------------------------------------------------
+tags de texto básicas
+______________________________________________________
+<P> -> Parágrafo -> Paragraph
+<br/> -> Quebra de linha -> Break Rule
+<hr> -> Linha Horizontal -> Horizontal Rule
+<!-- --> -> Comentário
+&lt; -> colocar o sinal de '<' -> LESS THAN -> MENOR QUE
+&gt; -> Colocar o sinal de '>' -> GREATER THAN -> MAIOR QUE
+Caracteres especiais -> www.w3schools.com/charset/ref_utf_symbols.asp para a listagem completa.
+&#xcódigo emoji -> Para se colocar um emoji, somente colocar o código do emoji precedido de &#x. 
+-----------------------------------------------------
+tags específicas
+_______________________________________________________
+img -> Colocar imagem no html
+
+<img src="" alt=""> -> Colocar imagem no padrão correto.
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -> Colocar ícone no site, preferêncialmente ícones com a extensão .ico
+
+<h1> a <h6> -> Títulos, devem ser usados em HIERARQUIA.
+
+<b> </b> -> Negrito, colocar em volta da palavra ou frase que se quer colocar em negrito.
+
+<strong> </strong> -> colocar em volta da palavra ou frase que se quer colocar em destaque.
+
+<i> </i> -> Itálico, colocar em volta da palavra ou frase que se quer colocar em itálico.
+
+<em> </em> -> Destaque, colocar em volta da palavra ou frase que se quer colocar em destaque.
+
+<mark> <mark> -> Coloca como se fosse um texto marcado como um marca-texto. se utilizar o background-color, pode se modeificar a cor.
+
+<small> </small> -> Reduz o tamanho do texto semanticamente.
+
+<del></del> -> Taxa o texto, pode servir para indicar que o texto foi excuído.
+
+<ins></ins> -> Sublinha o texto, pode indica que o texto foi inserido (semanticamente).
+
+//<u> </u> -> Sulinhado, não semântico.
+
+<sup></sup> -> Coloca o text em forma de miniatura em cima de outro. tipo como em 2 elevado a 2.
+<sub></sub> -> Coloca o texto em baixo de outro, como a fórmula da água HdoisO.
+<code></code> -> para colocar a fonte com monoespaçada. - Boa para ler códigos.
+
+<pre> <code> --- </code></pre> -> para se colocar um código fonte dentro da tag <code>, o texto ficará monoespaçado, no entato sem formatação, para se formatar o texto será necessário colocar a tag <pre>, tendo em vista que a formatação que será usada será a que estiver no código.
+
+<q> </q> -> Para uma citação simples.
+
+<blockquote> </blockquote> -> Citação completa, desloca levente a linha dentro para a esquerda, formando uma citação.
+
+<blockquote cite=""> </blockquote> -> o parametro cite pode ser utilizado para referênciar de onde saiu a frase, mesmo não tendo mudança visual, é útil para os mecanismos de busca.
+
+<abbr title="Significado da abreviação"></abbr> -> Serve para colocar a abreviação de uma palavra, e descrever oque ela significa, em modo flutuante.
+
+<bdo dir="ltr"></bdo> -> Serve para definir a direção de um texto. atributos "ltr" ou "rtl".
+
+<li> ... </li> -> Item da Lista -> List Item - Colocar o que vc quer que apareça na lista.
+
+<ol></ol> -> Listar Ordenadas - Ordened List - Listas ordenadas com números.
+    Em <ol tipe=""></ol> -> Pode se usar o parametro type para modificar o tipo de valor que será indicado. (type=""-> 1, A, a, I, i) I i -> Algarísmos Romanos.
+    Em <ol start="2"></ol> -> Colocasse o parametro start para indicar em qual valor se deve começar a contagem. Tendo em vista que start é um parametro numérico, deve se colocar a posição que se quer começar numericamente.
+
+<ul> ... </ul> -> Listas não ordenadas -> Unordered List - Listas sem ordem definida.
+    Em <ul tipe=""></ul> -> Pode se usar o parametro type para modificar o tipo de valor que será indicado. (type=""-> disc, circle, square)-> disco, circulo, quadrado.
+
+___________________________________________________
+LINKS
+<a href="">texto para ser clicado<a> -> Para se colocar links no site
+pode se usar os parametros target="_blank" rel="external" -> para se abrir o link em uma nova aba, mantendo assin o seu site.
+
+target="_blank" -> Indica ao HTML para abrir o link em uma nova aba.
+
+target="_self" -> Indica ao HTML para abrir o link na própia aba.
+
+rel="external" -> Indica o google que o link é externo ao site.
+
+rel="next" -> Indica ao goolge que o link é pertencente ao mesmo site, no entanto em uma outra página.
+
+rel="prev" -> Indica ao google que o link é pertencente ao mesmo site, no entanto em uma página anterior do mesmo
+
+rel="nofollow" -> indica ao google que não é para indexar o link ao site atual.
+
+<a href="arquivo para download.txt" download="arquivo para download.txt" type="arquivo para download.txt"> </a> ->
+-> Para se fazer o download de um arquivo, é somente colocar ele no lugar do link, e colocar alguns parâmetros.
+
+<link rel="shortcut icon" href="Imagem para aparecer no favicon" type="image/x-icon"> -> Coloca uma imagem no favicon do site. E quando as pessoas passarem no site, vai ficar apenas o favicom nos favoritos.
+
+___________________________________________________
+Imagens
+---------------------------------------------------
+<img src="" alt=""> -> Para inserir imagens no site.
+
+<picture> <source media="(max-width: 750px" srcset="local da imagem" type="image/tipo da imagem">
+<img src="" alt="">
+</picture>
+-> Para fazer imagens com padrões diferentes para cada tipo de tela. Utiliza-se o picture, primeiro coloca o valor mínimo para o valor máximo. O valor padrão pode ser quaquer um, no entato para funcionar corretamente, terá que se colocar na ordem de tamanho lateral da imagem.
+
+___________________________________________________
+Áudio
+---------------------------------------------------
+<audio cotrols preload="metadata">
+    <souce src="local do áudio" type="audio/tipo do aruivo">
+    caso vc queira que mais de uma opção de áudio seja carregada, caso a primeira falhe, pode se colocar quantos sources você quiser.
+    <p> Pode se colocar textos também, para caso todas as opções de audio falhem</p>
+</audio>
+-> Para se colocar áudio, pode se utilizar a tag audio, pode se utilizar os parametros controls, para mostrar os controles do áudio, e o parametro preload, para indicar como que se deve ser trabalhado o áudio no navegador. Recomenda-se colocar apenas metadata, que carrega apenas algumas informações das músicas, e carrega o arquivo completo quando se clica para reprodduzir.
+
+Há também outra forma de utilizar a tag audio.
+<audio src="meu áudio" controls> </audio> -> A sintaxe é praticamente a mesma para utilizar está tag, da tag anterior. A unica dferença é o modo como que se é escrita.
+
+___________________________________________________
+Vídeo
+---------------------------------------------------
+<video src="Meu vídeo" controls> </video> -> Para se utilizar a tag de vídeo, é basicamente o mesmo da tag de áudio.
+
+
+
+
+--------------------------------------------------
+Comandos de atalho no VS CODE
+___________________________________________________
+ctrl + shift + p - Wrap with abbreviation
+
+crtl + clique (em um link de um arquivo ue não existe)-> Quando voceç clicar em um arquivo que não existe, segurando o crtl, o VSCode irá perguntar se você quer criar o arquivo.
+
+---------------------------------------------------
+PSICOLOGIA DAS CORES
+
+Utilizar as cores a seu favor faz com que as pessoas fiquem mais tempo so site, página e afins.
+A psicologia das cores pode ser aplicada a várias cores, de forma a passar uma mensagem subconciente para o leitor / usuário.
+
+Pode se representar as cores no css pelas seguintes técnicas.
+Representação por nomes - 
+Representação por Hexadecimal - #ffffff Pode se usar a transparência também. #ffffffff (acrescenta-se mais 2 algarismos de 00 a ff).
+Representação po RGB - Red Green Blue (rgb(255, 255, 255)) com a transparência rgba(255, 255, 255, 0.999)
+Representação por HSL - Hue, Saturation, Luminosity (hsl(350, 100% , 100%)) com a transparência hsla(350, 100% , 100%, 0.999)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

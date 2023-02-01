@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação em CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root{
+            --padrao: #d2dce6;
+            --cor1: #7D1CE8;
+            --cor2: #3F314F;
+            --cor3: #2832B6;
+            --cor4: #BE9F59;
+            --cor5: #E8951C;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor3);
+
+        }
+
+        main{
+            min-width: 450px;
+            max-width: 1020px;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--padrao);
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        main h1{
+            font-size: 2em;
+            text-align: center;
+            
+        }
+
+         article > p{
+            margin: 20px 0px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        main > article > aside > p {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: #8a7d7d;
+            text-align: center;
+            align-self: middle;
+            padding-top: 100px;
+        }
+
+        
+
+        #cor1{
+            background-color: var(--cor1);
+            transition: 0.5s;
+            color: var(--cor1);
+        }
+        #cor2{
+            background-color: var(--cor2);
+            color: var(--cor2);
+            transition: 0.5s;
+        }
+        #cor3{
+            background-color: var(--cor3);
+            color: var(--cor3);
+            transition: 0.5s;
+        }
+        #cor4{
+            background-color: var(--cor4);
+            color: var(--cor4);
+            transition: 0.5s;
+        }
+        #cor5{
+            background-color: var(--cor5);
+            color: var(--cor5);
+            transition: 0.5s;
+        }
+
+        #cor1:hover{
+            box-shadow: inset 0px 0px 20px 15px black;
+            color: white;
+           
+        }
+        #cor2:hover{
+            box-shadow: inset 0px 0px 20px 15px black;
+            color: white;
+           
+        }
+        #cor3:hover{
+            box-shadow: inset 0px 0px 20px 15px black;
+            color: white;
+           
+        }
+        #cor4:hover{
+            box-shadow: inset 0px 0px 20px 15px black;
+            color: white;
+           
+        }
+        #cor5:hover{
+            box-shadow: inset 0px 0px 20px 15px black;
+            color: white;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Identificadores em CSS</h1>
+            <P>No exercício anterior, vimos as <mark>classes</mark> e entendemos que vários elementos podem ter uma mesma classe. Mas se quisermos <mark>identificar</mark> os elementos, dando um "nome" específico para cada um, podemos usar os IDs. Em um mesmo documento, <strong>não podemos ter dois elementos com o mesmo ID!</strong></P>
+            <aside>
+                <p id="cor1">cor: #7D1CE8</p>
+                <p id="cor2">cor: #3F314F</p>
+                <p id="cor3">cor: #2832B6</p>
+                <p id="cor4">cor: #BE9F59</p>
+                <p id="cor5">cor: #E8951C</p>
+                
+            </aside>
+        </article>
+    </main>
+</body>
+</html>

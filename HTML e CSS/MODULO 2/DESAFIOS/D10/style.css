@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'droid';
+    src: url(fontes/idroid.otf) format('Opentype');
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(fontes/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(115, 211, 115);
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(7, 56, 7), rgb(44, 136, 44), rgb(115, 211, 115));
+    height: 195px;
+}
+
+header >h1 {
+
+    color: rgb(226, 220, 220);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'bebas', cursive;
+    font-size: 2.5em;
+
+}
+
+header > p{
+    color: rgba(255, 255, 255, 0.863);
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+header > nav{
+    height: 50px;
+    padding: 20px;
+}
+
+header > nav > a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    padding: 20px;
+}
+
+header > nav > a:hover {
+    background-color: rgba(170, 169, 169, 0.404);
+    border-radius: 10px;
+}
+
+main{
+    text-align: justify;
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 13px black;
+}
+
+main> article > h2, main > h3{
+    font-family: 'droid';
+    padding: 2px;
+}
+
+main > article > h2{
+    color: rgb(12, 63, 12);
+    margin-top: -6px;
+}
+
+main > article > h3{
+    color: rgb(38, 126, 38);
+    background-image: linear-gradient(to right, rgba(87, 134, 87, 0.623) , white);
+    padding-left: 6px;
+}
+
+main > article> p, main > section > p{
+    text-indent: 42px;
+}
+
+main > article > p > span{
+    color: rgb(13, 104, 13);
+    font-weight: bold;
+}
+
+main > article> p > a{
+    color: rgb(13, 104, 13);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main > article> p > a::after{
+    content: '\1F517';
+}
+
+main > article> p > a:hover{
+    text-decoration: underline;
+}
+
+picture{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+section#video{
+    display: block;
+    margin: 10px 10px 10px -20px;
+    background-color: rgb(7, 56, 7);
+    text-align: center;
+    padding: 12px 0px;
+    min-width: 440px;
+    max-width: 840px;
+}
+
+section#video >iframe{
+    margin: auto;
+    min-width: 400px;
+    max-width: 800;
+}
+
+section#tabela{
+    min-width: 370px;
+    max-width: 770px;
+    background-color: rgb(115, 211, 115);
+    border-radius: 12px;
+    box-shadow: 2px 1px 7px black;
+    padding: 0px 13px 4px 13px;
+}
+
+section#tabela > spam{
+    display: block;
+    margin: 1px;
+    background-color: green;
+    min-width: 382px;
+    max-width: 8500px;
+    height: 2em;
+    border-radius: 12px 12px 1px 1px;
+    padding: 7px;
+    margin-left: -13px;
+    width: 800px;
+    
+}
+
+section#tabela > spam > h4{
+    color: white;
+    margin: 0px 2px 2px 11px;
+    font-size: 1.5em;
+}
+
+section#tabela > ul{
+    display: inline-block;
+    margin-left: 20px;
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714';
+}
+
+section#tabela > #direita{
+    margin-left: 27%;
+}
+
+section#tabela > p > a{
+    color: rgb(13, 104, 13);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#tabela > p > a::after{
+    content: '\1F517';
+}
+
+section#tabela > p > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(7, 56, 7);
+    text-align: center;
+    color: white;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

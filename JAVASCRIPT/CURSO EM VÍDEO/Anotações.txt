@@ -1,0 +1,16 @@
+________________________________________
+Estruturas de repetição
+
+while(condição){
+    código
+}
+-------------
+do {
+    código
+} while (condição)
+-------------
+for(criação e/ou iniciação da variável; condição; incremento da variável){
+
+} -> lembrando que serve para valores que podem ser incrementados.
+-------------
+

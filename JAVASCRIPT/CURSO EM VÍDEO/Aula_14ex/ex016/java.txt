@@ -1,0 +1,23 @@
+Função de java script.
+function contar(){
+    var nunIni = document.querySelector('#nunIni')
+    var numFim = document.querySelector('#numFim')
+    var numPasso = document.querySelector('#numPasso')
+    var contagem = document.querySelector('#contagem')
+    nunIni = Number(nunIni.value)
+    numFim = Number(numFim.value)
+    numPasso = Number(numPasso.value)
+
+    /* for(var c = nunIni; c <= numFim; c += numPasso){
+        //var numero = Number(nunIni)
+        contagem.innerHTML= `${Number(c.value)} 👉`
+    } */
+    var contador1 = document.createElement('span');
+    while(nunIni <= numFim){
+        //alert(`Numero Inicial `+Number(nunIni.value)+' Numero Fim '+Number(numFim.value)+' Passo '+Number(numPasso.value))
+        contagem.innerHTML= `${nunIni} 👉`
+        //contagem.innerHTML = 'Tchau'
+        nunIni = nunIni + numPasso
+    }
+    //alert('final')
+}

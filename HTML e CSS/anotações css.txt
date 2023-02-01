@@ -1,0 +1,257 @@
+style { Tudo aqui dentro, quando em um código HTML, se tornará css} -> Declaração de CSS quando em um arquivo HTML.
+
+tag {
+    tudo aqui dentro será aplicado a tag específica;
+}
+-> Para poder aplicar desings nas tags que se deseja alterar. Sempre fechar a linha ";".
+
+background-image: linear-gradient(to right, #FEB33C , quantas cores quiser.); -> Para se aplicar um esquema de cores gradiente linear a um elemento.
+
+background-image: radial-gradient(circle, #FEB33C ,Quantas cores quiser. ); -> Para se aplicar esquema de cores gradiente radial ao elemento.
+
+font-family: Arial, Helvetica, sans-serif; -> Troca a fonte para as escohidas, sendo que, vai tentar uma de cada vez, até o navegador ter alguma delas.
+
+text-align: justify; -> Alinha o  texto de modo justificado.
+
+background-color: white; -> Coloca a cor no fundo da tag.
+
+width: 600px; -> Define a largura total da tag.
+
+border-radius: 10px; -> arredonda os cantos da tag.
+
+box-shadow: 5px 5px 15px rgba(88, 21, 9, 0.773); -> coloca sombra atrás da tag. 
+box-shadow: sobra para o lado, para baixo, espalhamento, cor.
+
+text-shadow: 1px 1px 2px #805e46; -. o mesmo que box-shadow, no entanto com textos.
+
+color: #b18261; -> troca a cor do texto.
+
+---------------------------------------------------------
+Fontes
+_________________________________________________________
+Para se utilizar fontes diferentes das padrões do navegador, utiliza-se o comando font-family no css
+elemento{
+    font-family: 'fonte desejada';
+}
+
+existe um comando que é chamado safe fonts, que é combinar várias fontes juntas, caso o navegador não tenha a primeira, ele utiliza a segunda e assim sucessivamente.
+Indica-se que seja utilizado a ultima fonte como uma fonte curringa, ou seja, sans-serif, serif, cursive, entre outras.
+
+elemento{
+    font-family: 'primeira fonte', 'segunda fonte', 'quantas quiser', 'tipo padrão de fonte';
+}
+
+Tamnho das fontes.
+    * Medidas Absolutas
+    cm: Centimetro
+    mm: milimetro
+    in: polegada
+    px: pixel
+    pt: ponto
+    pc: paica
+
+    * Medidas Relativa 
+    em: Medida relativa ao tamanho atual da fonte(Relativo ao M maiúsculo da fonte).
+
+    ex: Medida relativa ao tamanho X da fonte.(Relativo ao tamanho x minusculo da fonte)
+
+    rem: Mensmo que o em, so que relativo a fonte que está aplicada ao elemento pai do site. (a fonte que estiver aplicada no body).
+
+    vw: medida relativa ao tamanho da viewport. (ou seja, o tamanho lateral da tela (width).).
+
+    vh: medida relativa à autura da viweport(mesmo que a largura, so que aplicada a altura.).
+
+    %: Pode se trabalhar também com porcentagem, em relação a algum elemento.
+
+
+Peso das fontes:
+O peso das fontes é definido na sua criação. No entanto, caso sejam definidos todos os tipos, ela pode receber os seguintes parametros:
+lighter, normal, bold, bolder.
+Alem das variações numericas delas: de 100 - 900.
+font-weight: normal;
+
+pode se utilizar, também, o parametro font-style, para se mudar o estilo da fonte.
+font-style: italic; -> Para se colocar a fonte em italico.
+
+Para se sublinhar as palavras, utilizando css, utiliza-se o parametro: text-decoration: underline; ->Sublinha as palavras.
+
+Mas deve-se atentar para que a fonte tenha todos esses parametros, inclusive se há a possibilidade de utilizar weight's juntamente com style's.
+
+Para os quatro parametros acima, pode se usar uma shorhands.
+font: font-style -> font-weight -> font-size -> font-family
+
+Tipos das Fontes no css
+- Opentype (otf)
+- truetype (ttf)
+- embedded-opentype 
+- truetype-aat (Apple Advanced Typography)
+- svg
+
+Para se importar de um arquivo, utiliza-se o seguinte comando ->
+@font-face {
+            font-family: 'nome para aparecer na hora de ser chamado';
+            src: url(local da fonte) format('truetype')(conforme lista acima.);
+        }
+
+
+Alinhamento de texto
+-----------------------
+text-align: center; -> alinha o texto conforme o solicitado (left, right, justify, center)
+
+pode se usaro o text-indent: 2em; para se identar o texto. Recomendo usar com em, para manter a proporção da letra e da tela.
+
+_________________________________________________________
+Pseudo-classes
+---------------------------------------------------------
+
+As pseudo classes são clases que servem para aplicar configurações especificas, quando determinada ação é realizada pelo usuário.
+
+elemento:pseudo-class -> O pseudo-class é caracterizado pelo síbolo de :
+
+elemento::pseud0-elemento -> O pseudo-elemento é caracterizado pelos simbolos de ::
+
+para se indicar que algum elemento é filho de outro em CSS utiliza-se o > 
+-> elemente > elemento filho {
+    todas as configurações serão aplicadas apenas para o(s) elemento(s) filho(s).
+}
+
+
+_________________________________________________________
+---------------------------------------------------------
+Box Model - Modelo de Caixas
+---------------------------------------------------------
+Altura - height -> Altura do elemento.
+Largura - width -> Largura do elemento.
+borda - border -> linha que circunda o CONTEÚDO do elemento.
+preenchimento - padding -> fica entre a borda e o conteúdo do elemento.
+margem - margin - margem externa a borda do elemento.
+contorno - outline -> fica do lado externo da borda, sobre a margem.
+
+Existem alguns tiops de caixa:
+Caixas em nível - Box level
+    É o tipo de caixa que ocupa toda a linha e é sempre criada no começo do viewport, e sempre prossegue o resto do conteúdo na linha posterior a ele.
+
+caixas dentro da linha - inline level
+    Diferentemente do box level, o inline level não ocupa toda uma linha. Ocupa apenas o espaço necessário para poder conter o seu conteúdo. Se houver outro conteúdo após ele, não será quebrada a linha, para se prosseguir em uma nova linha, será continuado na mesma linha, desde que tenha espaço no seu viewport.
+
+Exemplos:
+
+Box-level:
+<div>
+<h1>-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+inline level:
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup>-<sub>
+<label>
+<button>
+<input>
+<select>
+
+Configurações de Box-level e Inline-level
+
+height: 20px; -> Altura do elemento.
+width: 20px; -> Largura do elemento.
+
+border-width: 20px; -> Largura da borda.
+border-style: solid; -> Estilo da borda. ->Existem vários estilos de borda.
+border-color: red; -> Cor da borda.
+Pode se simplificar a declaração de bordas
+-> border: largura estilo cor; -> border: 20px solid red;
+
+padding-top: 10px; -> preenchimento superior do elemento.
+padding-right: 10px; -> preenchimento lateral direito do elemento.
+padding-bottom: 10px; -> preenchimento inferior do elemento.
+padding-left: 10px; preenchimento lateral esquerdo do elemento.
+Pode se simplificar a declaração de preenchimento
+-> padding: top right bottom left; padding: 10px 10px 10px 10px;
+-> Para o padding, pode se declarar apenas um valor para todos os lados.
+    padding: 10px; assim, todos os lados ficaram com 10px.
+-> Pode se, também, declarar apenas os valores de largura e altura.
+    padding: 10px 15px; assim, os valores de cima e baixo assumem 10px e direita e esquerda assumem 15px.
+-> Para o padding existe uma sequencia lógica de declaração. Declara-se conforme o sentido horário. de cima para a direita para baixo e para a esquerda.
+
+margin-top: 10px; margem superior o elemento.
+margin-right: 10px; margem direita do elemento.
+margin-bottom: 10px; margem infeiror do elemento.
+margin-left: 10px; margem esquerda do elemento.
+-> margin: top right bottom left; margin: 10px 10px 10px 10px;
+-> Para o margin, pode se declarar apenas um valor para todos os lados.
+    margin: 10px; assim, todos os lados ficaram com 10px.
+-> Pode se, também, declarar apenas os valores de largura e altura.
+    margin: 10px 15px; assim, os valores de cima e baixo assumem 10px e direita e esquerda assumem 15px.
+-> Para o margin existe uma sequencia lógica de declaração. Declara-se conforme o sentido horário. de cima para a direita para baixo e para a esquerda.
+
+outline-width: 10px; largura do contorno.
+outline-style: solid; estilo do contorno.
+outline-color: red; cor do contorno
+Pode se simplificar a declaração de contorno:
+-> outline: largura estilo cor; -> outline: 10px solid red;
+
+----------------------------------------------------------
+Trabalhando com sombras
+_________________________________________________________
+Para se adicionar sombras em ELEMENTOS, utiliza-se o box-shadow
+-> box-shadow: dentro ou fora (Parte opcional), deslocamento horizontal, deslocamento vertical, espalhamento, tamanho da sombra, cor;
+
+-> box-shadow: 1px 1px 1px black; -> Declaração padrão.
+
+-> box-shadow: (inset) 1px 1px 1px black; -> caso se queira sombra dentro do elemento, coloca-se o inset.
+
+-> box-shadow: 1px 1px 1px 1px black; -> caso queira delimitar a área para se utilizar o espalhamento, utiliza-se o spread. Basta adicionar o valor desejado, em px, após o espalhamento.
+
+-> Recomendo colocar sempre a cor preta, e utilizar a configuração alfa para poder mudar a transparência.
+
+Pode se utilizar também o blur para pode delimitar a área que o espalhamento irá atuar.
+
+Geralmente faz-se sombras fora do elemento(outset), mas pode se utilizar também as sombras dentro do elemento (inset).
+
+Borda a partir de uma imagem.
+border-image-source: url('meu arquivo'); -> Seleciona o arquivo para ser inseido como borda.
+border-image-slice: 27; -> Faz o esticamento da imagem.
+border-image-repeat: repeat; -> Configura se a imagem irá se repetir.
+
+-> Short anser
+-> border-image: souce slice repeat;
+-> border-image: url('minha imagem.png') 27 repeat;
+
+Nota: Para que a border-image funcione, tem que haver a declaração de border no elemento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
