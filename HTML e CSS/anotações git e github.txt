@@ -1,0 +1,29 @@
+Anotações Git e GitHub
+
+Utilizar GitHub e Git em vários computadores
+1 - Pré instalado deve se ter um navegador com acesso a internet.
+2 - Visual Studio Code
+3 - Git pré instalado
+4 - GitHub Desktop
+
+ - Abra o GitHub Desktop 
+ - Clique em File > Options > Accounts Signin como github.com
+ - Login e senha do github
+ 
+ Antes de continuar, deve-se iniciar o Git.
+ - No Github Desktop
+ - Clique em File > Options > Git.
+ Com isso já será iniciado o git com o e-mail temporário.
+
+ Pronto, já pode ir trabalhar.
+
+
+ Para poder deslogar.
+ Feche todos os aplicativos, deixando apenas o Github Desktop aberto.
+ -Clique em Repositório > Remove
+ - Na caixa de diálogo > seleciona a opção de Also move this repositorie to Recycle Bin > e clica em Remove.
+
+ - Delogar do GitHub Desktop
+ - File > Options > SignOut.
+ - File > Git > Selecionar o nome e o e-mail e apagar.
+ - Por útimo, esvaziar a lixeira.
