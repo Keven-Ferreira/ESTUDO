@@ -231,11 +231,19 @@ border-image-repeat: repeat; -> Configura se a imagem irá se repetir.
 
 Nota: Para que a border-image funcione, tem que haver a declaração de border no elemento.
 
+_________________________________________________________
+imagens de fundo
+---------------------------------------------------------
+Existem várias maneiras e formas de colocar imagem(ns) no fundo do site.
 
-
-
-
-
+no css
+- background-color: #123456; -> colocar somente cor no fundo.
+- background-image: liner-gradiente(to bottom, #123456, #654321); -> Para colocar um degradê linear, ou para outros tipos, apenas alterar de linear-gradiente para outros tipos.
+- background-image: url('link da imagem'); -> Para colocar uma imagem com oplano de fundo. Lembrando sempre que a imagem será repetida por padão, para que preencha todo o fundo.
+    ---- Propiedade de background-image------
+    -background-size: 100px; -> Altera o tamanho da imagem.
+    -background-repeat: no-repeat; faz com que a imagem não se repita mais. (outros valores possíveis 'repeat, repeat-x (repete no eixo X), repeat-x (repete no eixo Y)').
+    -background-position: 
 
 
 
