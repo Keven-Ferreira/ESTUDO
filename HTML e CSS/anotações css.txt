@@ -243,7 +243,21 @@ no css
     ---- Propiedade de background-image------
     -background-size: 100px; -> Altera o tamanho da imagem.
     -background-repeat: no-repeat; faz com que a imagem não se repita mais. (outros valores possíveis 'repeat, repeat-x (repete no eixo X), repeat-x (repete no eixo Y)').
-    -background-position: 
+    
+    -background-position: top center;
+    Há varios valores que podem ser inseridos no background-position:
+        vertical - left | center | right
+        horizontal - top | center | bottom
+    
+    Deve sempre colocar os valores com um valor do eixo vertical e 1 valor do eixo horizontal.
+
+    -background-size: auto;
+    Valores possíveis:
+        - auto -> automático
+        - cover -> preenche a imagem na tela, no entanto não mostra a imagem inteira. - mais indicado.
+        - contain -> tenta mostrar sempre 100% da imagem, fazendo com que apareçam barras, lateris ou superiores, na tela.
+        - pode-de usar, também, valores em %, como 100%.
+
 
 
 
