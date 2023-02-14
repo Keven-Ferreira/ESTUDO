@@ -267,6 +267,21 @@ no css
     -> o sie ainda não está funcionando nos navegadores, no entanto, eventualmente, ele irá voltar a funcionar.
     background-size: cover.
 
+_________________________________________________________
+CENTRALIZAÇÃO DE ELEMENTOS NA TELA.
+---------------------------------------------------------
+
+Criasse 2 elementos, 1 elemento pai e 1 elemento filho.
+define-se o elemento pai como relative.
+-> 
+define-se o elemento filho como absolute.
+
+O elemento filho receberá as seguinte atribuições.
+-> left: 50%;
+-> top: 50%;
+-> transform: translate(-50%, -50%);
+
+Assim o elemento filho ficará centralizado com o elemento pai.
 
 
 
