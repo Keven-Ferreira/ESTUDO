@@ -257,7 +257,15 @@ no css
         - cover -> preenche a imagem na tela, no entanto não mostra a imagem inteira. - mais indicado.
         - contain -> tenta mostrar sempre 100% da imagem, fazendo com que apareçam barras, lateris ou superiores, na tela.
         - pode-de usar, também, valores em %, como 100%.
+    -background-attachment: fixed -> Para poder deixar fixado a imagem de fundo no site.
+    -background-attachment: scrool -> Para poder deixar a imagem rolando junto com a página.
 
+
+-Shorthand - background.
+    background: black url() center center no-repeat cover fixed;
+    background: cor > local da imagem > position > [size] > attachment;
+    -> o sie ainda não está funcionando nos navegadores, no entanto, eventualmente, ele irá voltar a funcionar.
+    background-size: cover.
 
 
 
