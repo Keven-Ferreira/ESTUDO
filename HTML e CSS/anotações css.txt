@@ -11,6 +11,8 @@ background-image: radial-gradient(circle, #FEB33C ,Quantas cores quiser. ); -> P
 
 font-family: Arial, Helvetica, sans-serif; -> Troca a fonte para as escohidas, sendo que, vai tentar uma de cada vez, até o navegador ter alguma delas.
 
+font-variant: small-caps; -> Faz com que todas as letras tenham o formato maiúscula e com que a peimeira letra de cada palavra fique maior.
+
 text-align: justify; -> Alinha o  texto de modo justificado.
 
 background-color: white; -> Coloca a cor no fundo da tag.
@@ -282,9 +284,6 @@ O elemento filho receberá as seguinte atribuições.
 -> transform: translate(-50%, -50%);
 
 Assim o elemento filho ficará centralizado com o elemento pai.
-
-
-
 
 
 
