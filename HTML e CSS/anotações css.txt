@@ -286,6 +286,18 @@ O elemento filho receberá as seguinte atribuições.
 Assim o elemento filho ficará centralizado com o elemento pai.
 
 
+___________________________________________________
+tabelas
+---------------------------------------------------
+border-collapse: collapse; -> retira o espaço que existe na tabela, entre uma célua e outra. -> Valores possíveis -> separated, collapse.
+
+Alinhamento dos dados nas celulas.
+    Alinhamento vertical -> text-align: center; -> left - a esquerda | center - no centro | right - a direira;
+    Alinhamento horizontal -> vertical-align: top; -> top - em cima | middle - no meio | bottom - em baixo;
+
+
+
+
 
 
 

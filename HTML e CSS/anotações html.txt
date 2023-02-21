@@ -145,6 +145,25 @@ Representação po RGB - Red Green Blue (rgb(255, 255, 255)) com a transparênci
 Representação por HSL - Hue, Saturation, Luminosity (hsl(350, 100% , 100%)) com a transparência hsla(350, 100% , 100%, 0.999)
 
 
+___________________________________________________
+TABELAS
+---------------------------------------------------
+Hierarquia de tabelas simples
+        table = tabela
+        table row = linha da tabela
+            table header = cabeçalho da tabela
+            table data = dado da tabela
+
+-> <table> -> Declara a tabela
+        <tr>   -> Declara a linha da tabela
+            <td></td>   -> Declara os dados que serão colocados em cada linha da tabela.
+        </tr>
+    </table>
+
+
+___________________________________________________
+Tabelas mais complexas
+---------------------------------------------------
 
 
 
