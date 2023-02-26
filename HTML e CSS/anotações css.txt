@@ -285,7 +285,7 @@ O elemento filho receberá as seguinte atribuições.
 
 Assim o elemento filho ficará centralizado com o elemento pai.
 
-
+tttttt
 ___________________________________________________
 tabelas
 ---------------------------------------------------

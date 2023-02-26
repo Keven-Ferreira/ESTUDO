@@ -165,8 +165,18 @@ ___________________________________________________
 Tabelas mais complexas
 ---------------------------------------------------
 
+Table
+    Caption - Legenda
+    Thead - cabeça
+        tr, td, th
+    Tbody - corpo
+        tr, td, th
+    Tfoot - rodapé
+        tr, td, th
 
-
+    Scoope - Escopo -> Faz com que o navegador entenda que aquelçe dado é realmente um titulo e que os seus dados estão na linha ou na coluna.
+        row - linha
+        col - coluna
 
 
 
