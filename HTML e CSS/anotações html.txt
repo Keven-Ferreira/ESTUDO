@@ -179,6 +179,13 @@ Table
         col - coluna
 
 
+___________________________________________________
+Iframe
+---------------------------------------------------
+Para se adicionar o Iframe pode se utilizar a tag <iframe src="link do site para se abrir no Iframe" frameborder="0"> </iframe> em qualqer lugar do código.
+
+O Iframe serve para abrirmos outra uma área de um site. Ou seja, podemos reduzir uma janela um site externo.
+
 
 
 

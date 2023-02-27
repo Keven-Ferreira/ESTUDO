@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        O tamanho padrão do Iframe é 300px X 150px.
+        Pode se modificar com atributos direto na tag Iframe ou na CSS, lembrando que o CSS é soberano sobre essa tag.
+        height e width
+    
+        Para forçar a rolagem da pagina (scroll), pode se usar o atributo scrolling="yes", e pode se usar o valor de "no", para se evitar o scroll.
+    -->
+    <h1>Testando o uso de iframe</h1>
+    <p>Acessando o site do 
+    <iframe src="https://cursoemvideo.com/" frameborder="0" scrolling="yes">
+        Curso em Vídeo
+    </iframe>
+     para aprender a programar.</p>
+
+    <p>Site do <iframe src="https://www.tecmundo.com.br/" frameborder="0"><a href="https://www.tecmundo.com.br/">Tecmundo</a></iframe> tabém é muito legal, pena que não funciona no Iframe.</p>
+    <p>O repositório do Guanabara no <iframe src="https://gustavoguanabara.github.io" frameborder="0"> <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></iframe> tabém é bem legal</p>
+</body>
+</html>
