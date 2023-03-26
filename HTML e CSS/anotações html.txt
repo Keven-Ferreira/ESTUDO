@@ -186,10 +186,20 @@ Para se adicionar o Iframe pode se utilizar a tag <iframe src="link do site para
 
 O Iframe serve para abrirmos outra uma área de um site. Ou seja, podemos reduzir uma janela um site externo.
 
+frameborder="0" -> Frame border é basicamente a borda do iframe. pode se modificar a borda com o css.
 
 
 
+srcdoc="" -> serve para criar uma página estática no iframe.
+-> Pode se colocar um html básico no iframe, no entanto sem css e sem muita estilização.
 
+Politica para mais segurança -> utilizar no iframe para maior segurança para os suários -> sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"
+
+allow-same-origin -> Permitir executar o iframe se for da mesma origin
+allow-forms -> Permitir que os formulários executem.
+allow-scripts -> Permitir que os scripts executem.
+
+referrerpolicy="no-referrer" -> Não deixa que sejam coletados dados do usuário do site.
 
 
 
