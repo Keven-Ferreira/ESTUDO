@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        body{
+            background-color: rgb(31, 30, 30);;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <section>
+                <form action="">
+                    <input type="text" name="num1" id="num1" checked>
+                    <input type="text" name="num2" id="num2" checked>
+                    <input type="text" name="resultado" id="resultado">
+                    <input type="button" value="calcular" onclick="calculadora()">
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <script>
+        /* alert('funcionando') */
+       /*  var nome = prompt("Qual o seu nome?");
+        var idade = prompt("Qual a sua idade?");
+        var cidade = prompt("Qual a sua cidade?");
+
+        console.log(`O nome é ${nome} a idade é ${idade} e a cidade é ${cidade}`); */
+        function calculadora(num1, num2){
+            var num1 = document.querySelector('#num1');
+            var num2 = document.querySelector('#num2');
+            var res = document.querySelector('#resultado');
+
+            res.innerHTML = num1.value + num2.value;
+
+            alert(`${num1.value}  ${num2.value}`);
+        }
+    </script>
+</body>
+</html>

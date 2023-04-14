@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var anonasc = prompt("Informe o ano do seu nascimento!");
+        var dataAtual = new Date();
+        var atual = dataAtual.getFullYear();
+        if(anonasc >= atual) {
+            while(anonasc >= atual){
+                alert(`Informe um ano válido, ano informado ${anonasc}`);
+                anonasc = prompt("Informe o ano do seu nascimento!");
+            }
+        }else{
+            var idadeAtual = atual - anonasc;
+            alert(`Você fará ${idadeAtual} anos este ano`);
+        }
+    </script>
+</body>
+</html>
